@@ -17,38 +17,38 @@ API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
-CHAT = getenv("CHAT","https://t.me/+eSTzpugepEMwNDBl")
-BOT_NAME = getenv("BOT_NAME","AM")
-LOGS = getenv("LOGS","-1001841879487")
-OWNER_USERNAME = getenv("OWNER_USERNAME","AM_YTBOTT")
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://AMBOT:AMBOT@ambot.uecutzy.mongodb.net/?retryWrites=true&w=majority")
+CHAT = getenv("CHAT","https://t.me/+jCS-YsVBVEE3NjQ1")
+BOT_NAME = getenv("BOT_NAME","Arica X Yukki")
+LOGS = getenv("LOGS","-1001717726836")
+OWNER_USERNAME = getenv("OWNER_USERNAME","sultan11100")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Aman:Aman@cluster0.9ztuf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001840241140"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001971806089"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Shizuka X Music")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Arica X Yukki")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "6204761408 5360305806").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "6204761408 2105971379").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-BOT_ID = getenv("BOT_ID","5978355046")
+BOT_ID = getenv("BOT_ID","5047622280")
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/AMBOTYT/musicshizuka",
+    "https://github.com/AbhiMod/AricaMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL",None)
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/+eSTzpugepEMwNDBl")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/+jCS-YsVBVEE3NjQ1")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
@@ -79,9 +79,9 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 
 CLEANMODE_DELETE_MINS = int(getenv("CLEANMODE_MINS", "5"))
 
-TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
+TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "904857600"))
 
-TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "9073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
 STRING1 = getenv("STRING_SESSION", None)
@@ -103,19 +103,19 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/b3ea89fb3df132dc02ad8.jpg")
+    "START_IMG_URL", "https://telegra.ph/file/65982f555b0ab16360b77.jpg")
 
 PING_IMG_URL = getenv(
-    "PING_IMG_URL","https://graph.org/file/b3ea89fb3df132dc02ad8.jpg")
+    "PING_IMG_URL","https://telegra.ph/file/65982f555b0ab16360b77.jpg")
 
 PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "PLAYLIST_IMG_URL","https://telegra.ph/file/65982f555b0ab16360b77.jpg")
 
 GLOBAL_IMG_URL = getenv(
-    "GLOBAL_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "GLOBAL_IMG_URL","https://telegra.ph/file/65982f555b0ab16360b77.jpg")
 
 STATS_IMG_URL = getenv(
-    "STATS_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "STATS_IMG_URL","https://telegra.ph/file/65982f555b0ab16360b77.jpg")
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
