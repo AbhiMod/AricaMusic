@@ -28,11 +28,6 @@
         "value": "5978355046:AAHITQs8fVUy9Rdn5KEl7TRJT9xE7ph15gI",
         "required": true
       },        
-      "MONGO_DB_URI": {
-        "description": "Mongo DB URL",
-        "value": "mongodb+srv://AMBOT:AMBOT@ambot.uecutzy.mongodb.net/?retryWrites=true&w=majority",
-        "required": true
-      },
       "STRING_SESSION": {
         "description": "A Pyrogram Session Get It From  Here @Session_Generator_Robot.",
         "value": "",
