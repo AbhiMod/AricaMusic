@@ -18,7 +18,7 @@ API_HASH = getenv("API_HASH","b463bedd791aa733ae2297e6520302fe")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 CHAT = getenv("CHAT","https://t.me/+jCS-YsVBVEE3NjQ1")
-BOT_NAME = getenv("BOT_NAME","Arica X Yukki")
+BOT_NAME = getenv("BOT_NAME","Erica X Yukki")
 LOGS = getenv("LOGS","-1001717726836")
 OWNER_USERNAME = getenv("OWNER_USERNAME","sultan11100")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Aman:Aman@cluster0.9ztuf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
@@ -29,7 +29,7 @@ SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001971806089"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Arica X Yukki")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Erica X Yukki")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "2105971379 6204761408").split()))
 
