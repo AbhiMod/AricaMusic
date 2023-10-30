@@ -141,11 +141,11 @@ async def gen_thumb(videoid, user_id, theme):
                 font=font,
             )
             text_w, text_h = draw.textsize(
-                f"Arica One Of The Most Advanced Telegram Music Bot", font=arial
+                f"Erica One Of The Most Advanced Telegram Music Bot", font=arial
             )
             draw.text(
                 ((1280 - text_w) / 2, 80),
-                f"Arica One Of The Most Advanced Telegram Music Bot",
+                f"Erica One Of The Most Advanced Telegram Music Bot",
                 fill="green",
                 font=arial,
             )
@@ -300,11 +300,11 @@ async def gen_qthumb(videoid, user_id, theme):
                 font=font,
             )
             text_w, text_h = draw.textsize(
-                f"Arica One Of The Most Advanced Telegram Music Bot", font=arial
+                f"Erica One Of The Most Advanced Telegram Music Bot", font=arial
             )
             draw.text(
                 ((1280 - text_w) / 2, 80),
-                f"Arica One Of The Most Advanced Telegram Music Bot",
+                f"Erica One Of The Most Advanced Telegram Music Bot",
                 fill="green",
                 font=arial,
             )
