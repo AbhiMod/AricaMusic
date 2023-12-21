@@ -13,26 +13,6 @@
     ],
     "stack": "container",
     "env": {
-      "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "12227067",
-        "required": true
-      },
-      "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "b463bedd791aa733ae2297e6520302fe",
-        "required": true
-      },
-      "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
-        "value": "5978355046:AAHITQs8fVUy9Rdn5KEl7TRJT9xE7ph15gI",
-        "required": true
-      },        
-      "STRING_SESSION": {
-        "description": "A Pyrogram Session Get It From  Here @Session_Generator_Robot.",
-        "value": "",
-        "required": true
-      },
       "HEROKU_API_KEY": {
         "description": "Your Heroku account's API key",
         "value": "",
