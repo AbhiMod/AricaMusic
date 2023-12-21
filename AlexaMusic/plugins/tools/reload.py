@@ -1,14 +1,3 @@
-#
-# Copyright (C) 2021-2022 by Alexa_Help@Github, < https://github.com/Jankarikiduniya >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @Dr_Asad_Ali
-# Rocks © @Shayri_Music_Lovers
-# Owner Asad Ali
-# Harshit Sharma
-# All rights reserved. © Alisha © Alexa
-
-
 import asyncio
 
 from pyrogram import filters
@@ -82,15 +71,17 @@ async def restartbot(client, message: Message, _):
 
 
 @app.on_callback_query(filters.regex("close") & ~BANNED_USERS)
-async def close_menu(_, CallbackQuery):
+async def close_menu(_, query: CallbackQuery):
     try:
-        await CallbackQuery.message.delete()
-        await CallbackQuery.answer()
-        await CallbackQuery.message.reply_text(
-            f"𝓒𝓵𝓸𝓼𝓮𝓭 𝓑𝔂 ➣ {CallbackQuery.from_user.mention}"
+        await query.answer()
+        await query.message.delete()
+        umm = await query.message.reply_text(
+            f"Cʟᴏsᴇᴅ ʙʏ : {query.from_user.mention}"
         )
-    except Exception as e:
-        print(e)
+        await asyncio.sleep(2)
+        await umm.delete()
+    except:
+        pass
 
 
 @app.on_callback_query(filters.regex("stop_downloading") & ~BANNED_USERS)
