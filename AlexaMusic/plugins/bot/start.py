@@ -178,22 +178,22 @@ async def start_comm(client, message: Message, _):
             OWNER = OWNER_ID[0]
         except:
             OWNER = None
-        out = private_panel(_, app.username, OWNER)
+        out = private_panel(_)
         if config.START_IMG_URL:
             try:
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
-                    caption=_["start_2"].format(message.from_user.mention,app.username),
+                    caption=_["start_2"].format(message.from_user.mention,app.mention),
                     reply_markup=InlineKeyboardMarkup(out),
                 )
             except:
                 await message.reply_text(
-                    _["start_2"].format(message.from_user.mention,app.username),
+                    _["start_2"].format(message.from_user.mention,app.mention),
                     reply_markup=InlineKeyboardMarkup(out),
                 )
         else:
             await message.reply_text(
-                _["start_2"].format(message.from_user.mention,app.username),
+                _["start_2"].format(message.from_user.mention,app.mention),
                 reply_markup=InlineKeyboardMarkup(out),
             )
         if await is_on_off(config.LOG):
@@ -215,7 +215,7 @@ async def start_comm(client, message: Message, _):
 async def testbot(client, message: Message, _):
     out = start_pannel(_)
     return await message.reply_text(
-        _["start_1"].format(message.chat.title, app.username),
+        _["start_1"].format(message.chat.title, app.mention),
         reply_markup=InlineKeyboardMarkup(out),
     )
 
@@ -262,11 +262,11 @@ async def welcome(client, message: Message):
                 )
             if member.id in config.OWNER_ID:
                 return await message.reply_text(
-                    _["start_4"].format(app.username, member.mention)
+                    _["start_4"].format(app.mention, member.mention)
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    _["start_5"].format(app.username, member.mention)
+                    _["start_5"].format(app.mention, member.mention)
                 )
             return
         except:
