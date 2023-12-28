@@ -12,6 +12,7 @@ from config.config import OWNER_ID, CHAT
 from strings import get_command, get_string
 from AlexaMusic import Telegram, YouTube, app
 from AlexaMusic.misc import SUDOERS
+from AlexaMusic import app
 from AlexaMusic.plugins.play.playlist import del_plist_msg
 from AlexaMusic.plugins.sudo.sudoers import sudoers_list
 from AlexaMusic.utils.database import (
@@ -182,7 +183,7 @@ async def start_comm(client, message: Message, _):
             try:
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
-                    caption=_["start_2"].format(config.MUSIC_BOT_NAME),
+                    caption=_["start_2"].format(message.from_user.mention,app.mention),
                     reply_markup=InlineKeyboardMarkup(out),
                 )
             except:
